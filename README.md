@@ -56,9 +56,9 @@ What things you need to install the software and how to install them.
 
 #### the Easy route
 
-'''zsh
+```zsh
 zsh <(curl -s https://raw.githubusercontent.com/gmkey/tunnelblick_cli_macos/master/install_vpnconnect_shell_integration.zsh)
-'''
+```
 
 A step by step series of examples that tell you how to get a development env running.
 
