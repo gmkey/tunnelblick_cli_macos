@@ -56,7 +56,7 @@ What things you need to install the software and how to install them.
 
 #### the Easy route
 
-```zsh
+```bash
 zsh <(curl -s https://raw.githubusercontent.com/gmkey/tunnelblick_cli_macos/master/install_vpnconnect_shell_integration.zsh)
 ```
 
@@ -85,29 +85,29 @@ End with an example of getting some data out of the system or using it for a lit
 The script has 4 parameters: config, open, close and clear
 
 #### config
-```zsh 
+```bash 
 vpnconnect config
 ```
 will prompt you to configure your preferred OpenVPN configuration in Tunnelblick. If you don't give one it will list the configurations to choose from.
 
 #### clear
-```zsh 
+```bash 
 vpnconnect clear
 ```
 clears your configuration
 
 #### open
-```zsh
+```bash
 vpnconnect open
 ```
 Will disconnect any running VPN sessions and connect your VPN configuration you configured as default.
-```zsh
+```bash
 vpnconnect open <another_VPN_configuration>
 ```
 Will disconnect any running VPN sessions and connect to the given VPN configuration.
 
 #### close
-```zsh
+```bash
 vpnconnect close
 ```
 Will close the session you opened and will reconnect to the previous VPN connection.  (Ideal for short logins to external environments).
