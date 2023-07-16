@@ -23,8 +23,8 @@ curl -L "$REPO_URL/master/.vpnconnect_shell_integration.zsh" -o "$HOME/.vpnconne
 chmod +x "$INSTALL_DIR/vpnconnect.sh"
 
 # Source the shell integration from .zshrc if it's not already there
-if ! grep -q "source $HOME/.vpnconnect_shell_integration.zsh" "$HOME/.zshrc"; then
-    echo "source $HOME/.vpnconnect_shell_integration.zsh" >>"$HOME/.zshrc"
+if ! grep -q "test -e \"${HOME}/.vpnconnect_shell_integration.zsh\" && source \"${HOME}/.vpnconnect_shell_integration.zsh\"" "$HOME/.zshrc"; then
+    echo "test -e \"${HOME}/.vpnconnect_shell_integration.zsh\" && source \"${HOME}/.vpnconnect_shell_integration.zsh\""
 fi
 
 # Inform the user that the installation is complete
