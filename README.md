@@ -47,12 +47,18 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 What things you need to install the software and how to install them.
+- [MacOS Ventura](https://www.apple.com/en/macos/ventura/)
+- a terminal client like [iTerm2](https://iterm2.com)
+- [Tunnelblick](https://tunnelblick.net) 
 
-```
-Give examples
-```
 
 ### Installing
+
+#### the Easy route
+
+'''zsh
+zsh <(curl -s https://raw.githubusercontent.com/gmkey/tunnelblick_cli_macos/master/install_vpnconnect_shell_integration.zsh)
+'''
 
 A step by step series of examples that tell you how to get a development env running.
 
@@ -100,14 +106,13 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Tunnelblick](https://www.tunnelblick.net/) - OpenVPN client for MacOS
+- [zsh](https://www.zsh.org) - Zsh is a shell designed for interactive use, although it is also a powerful scripting language.
+
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [@gmkey](https://github.com/gmkey) - Idea & Initial work
 
 See also the list of [contributors](https://github.com/gmkey/tunnelblick_cli_macos/contributors) who participated in this project.
 
