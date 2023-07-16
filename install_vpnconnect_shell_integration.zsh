@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Set the URL of the repository
-REPO_URL="https://github.com/gmkey/tunnelblick_cli_macos"
+REPO_URL="https://raw.githubusercontent.com/gmkey/tunnelblick_cli_macos"
 
 # Set the directory to install the scripts
 INSTALL_DIR="$HOME/vpnconnect"
@@ -16,8 +16,8 @@ fi
 mkdir -p "$INSTALL_DIR"
 
 # Download the scripts
-curl -L "$REPO_URL/raw/main/vpnconnect.sh" -o "$INSTALL_DIR/vpnconnect.sh"
-curl -L "$REPO_URL/raw/main/.vpnconnect_shell_integration.zsh" -o "$HOME/.vpnconnect_shell_integration.zsh"
+curl -L "$REPO_URL/master/vpnconnect.sh" -o "$INSTALL_DIR/vpnconnect.sh"
+curl -L "$REPO_URL/master/.vpnconnect_shell_integration.zsh" -o "$HOME/.vpnconnect_shell_integration.zsh"
 
 # Set the permissions on the scripts
 chmod +x "$INSTALL_DIR/vpnconnect.sh"
