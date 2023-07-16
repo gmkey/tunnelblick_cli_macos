@@ -26,7 +26,7 @@
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
 - [Usage](#usage)
-- [Built Using](#built_using)
+- [Built with](#built_with)
 - [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
@@ -60,6 +60,7 @@ What things you need to install the software and how to install them.
 zsh <(curl -s https://raw.githubusercontent.com/gmkey/tunnelblick_cli_macos/master/install_vpnconnect_shell_integration.zsh)
 ```
 
+##### manually
 A step by step series of examples that tell you how to get a development env running.
 
 Say what the step will be
@@ -76,35 +77,42 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo.
 
-## 🔧 Running the tests <a name = "tests"></a>
 
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+### integrated into your zsh environment. 
+The script has 4 parameters: config, open, close and clear
 
-## 🚀 Deployment <a name = "deployment"></a>
+#### config
+```zsh 
+vpnconnect config
+```
+will prompt you to configure your preferred OpenVPN configuration in Tunnelblick. If you don't give one it will list the configurations to choose from.
 
-Add additional notes about how to deploy this on a live system.
+#### clear
+```zsh 
+vpnconnect clear
+```
+clears your configuration
 
-## ⛏️ Built Using <a name = "built_using"></a>
+#### open
+```zsh
+vpnconnect open
+```
+Will disconnect any running VPN sessions and connect your VPN configuration you configured as default.
+```zsh
+vpnconnect open <another_VPN_configuration>
+```
+Will disconnect any running VPN sessions and connect to the given VPN configuration.
+
+#### close
+```zsh
+vpnconnect close
+```
+Will close the session you opened and will reconnect to the previous VPN connection.  (Ideal for short logins to external environments).
+
+## ⛏️ Built with<a name = "built_with"></a>
 
 - [Tunnelblick](https://www.tunnelblick.net/) - OpenVPN client for MacOS
 - [zsh](https://www.zsh.org) - Zsh is a shell designed for interactive use, although it is also a powerful scripting language.
