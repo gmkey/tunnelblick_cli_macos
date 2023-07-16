@@ -124,7 +124,6 @@ function vpnconnect() {
             done
         fi
         openvpn_connect "$vpn_profile"
-        exit 0
 
     # Close the VPN session
     elif [[ $1 == "close" ]]; then
@@ -141,10 +140,8 @@ function vpnconnect() {
                 openvpn_connect "$vpn"
             done
             rm "$TEMP_FILE"
-            exit 0
         else
             echo "Not reconnecting previous connection as no previous VPN connection found."
-            exit 0
         fi
 
     # Clear the VPN profile
